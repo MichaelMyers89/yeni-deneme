@@ -1,10 +1,11 @@
-@import url(<link rel="stylesheet" href="https://use.typekit.net/gxv0mgk.css">);
+
 
 *::before
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
   
 }
 html {
@@ -15,9 +16,8 @@ html {
 body
 { 
   max-width: 100vw;
-  line-height: 1.6;
-  margin-left: auto;
-  margin-right: auto;
+  overflow-x: hidden;
+  
 
 }
 .header_elements{
@@ -61,7 +61,7 @@ body
     
 
 .main_desing1{
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: -15rem;
     flex-wrap: wrap;
@@ -80,8 +80,6 @@ body
     margin-right: 15rem;
     
 
-    
-;
 }
 .main_image_desing{
     box-sizing: border-box;
@@ -124,19 +122,14 @@ body
      transition: 0.5s; 
      
      }
-     @media (min-width: 768px) {
-  .ul_desing {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+  
      .ul_desing{display: flex;
         flex-direction: row;
-
-        flex-wrap: ;
+        flex-wrap:wrap ;
         justify-content: center;
-        width: 100%;
+        width: 100vw;
         gap: 5rem;
-        padding: 5rem 5rem;
+        padding: 5rem;
         list-style: none;
         margin: auto;
      }
