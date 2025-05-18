@@ -124,8 +124,14 @@ body
      transition: 0.5s; 
      
      }
+     @media (min-width: 768px) {
+  .ul_desing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
      .ul_desing{display: flex;
         flex-direction: row;
+
         flex-wrap: ;
         justify-content: center;
         width: 100%;
@@ -133,8 +139,7 @@ body
         padding: 5rem 5rem;
         list-style: none;
         margin: auto;
-        
-    }
+     }
     .li_box{
         box-sizing: border-box;
         background-color: white;
